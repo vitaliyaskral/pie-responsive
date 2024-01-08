@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        body{
+            background-color: aquamarine;
+        }
+        footer{
+            display: flex;
+            flex-wrap: wrap;
+            background-color: gray;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            padding: 20px;           
+        }
+        footer h2{
+            font-size: 0.9em;
+        }
+        #aviso{
+            width: 80%;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        #redes{
+            width: 20%;
+            padding-left: 10px;
+            text-align: right;
+            padding-bottom: 10px;
+        }
+        #copyright{
+            width: 100%;
+            text-align: center;
+            border-top: 2px solid white;
+            padding-top: 10px;
+        }
+        /*  mobiles*/
+        @media (max-width: 600px){
+            body{background-color: blue;}
+            footer{display: block;
+                    font-size: 1.3em;
+            }
+            #aviso, #redes{width: 100%;}
+            #redes {text-align: center;}
+            }
+        /*  tablets*/
+        @media (min-width: 601px) and (max-width: 780px){
+            body{background-color:orange;}
+            }
+        
+    </style>
+
+</head>
+<body>
+    <footer>
+        <div id="aviso">
+            <h2>Aviso Legal</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure consequuntur blanditiis cum sit, nihil placeat facere ab quod assumenda illo magnam iste similique exercitationem, quam rerum mollitia a alias dolorem.</p>
+        </div>
+        <div id="redes">
+            <h2>Redes sociales</h2>
+            <p>X/Twitter</p>
+            <p>Instagram</p>
+            <p>Facebook</p>
+        </div>
+        <div id="copyright">
+            <p>&copy; IES Virrey Morcillo 2024</p>
+        </div>
+    </footer>
+</body>
+</html>
